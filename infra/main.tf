@@ -4,7 +4,7 @@ resource "aws_lambda_function" "myfunc" {
   function_name    = "myfunc"                  # The name of your Lambda function
   role             = aws_iam_role.iam_for_lambda.arn
   handler          = "func.handler"           # The handler function in your code
-  runtime          = "python3.8"              # The runtime for your Lambda function
+  runtime          = "python3.9"              # The runtime for your Lambda function
 }
 
 
